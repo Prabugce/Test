@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Testing code using deepcode AI.
+          Testing code using deepcode AI
         </a>
       </header>
     </div>
