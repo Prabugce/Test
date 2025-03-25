@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
 
-function App() {
+// Unused variable (DeepCode should flag this)
+const unusedVariable = "This variable is not used anywhere";
+
+// Commented-out code (DeepCode should flag this)
+{/* <button>Old Button</button> */}
+
+const App = () => {
+  const [count, setCount] = useState(0);
+  const [isValid, setIsValid] = useState(true);
+
+  useEffect(() => {
+    // Logic for validation (but commented out logic)
+    // console.log("Validation logic");
+  }, []);
+ 
+
+  // Improper function for state update (DeepCode might flag this)
+  const handleClick = () => {
+    // `count` is not updated as expected due to closure issue
+    setCount(count + 1);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Testing code using deepcode AI
-        </a>
-      </header>
+    <div>
+      <h1>Test</h1>
+      <button onClick={handleClick}>Increment Count</button>
+      <p>Count: {count}</p>
     </div>
   );
-}
+};
 
 export default App;
