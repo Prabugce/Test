@@ -11,6 +11,8 @@ const App = () => {
   const [isValid, setIsValid] = useState(true);
   const [isValid1, setIsValid1] = useState(true);
   const [isValid2, setIsValid2] = useState(true);
+  
+  const [pass123, setpass123] = useState(true);
 
   useEffect(() => {
     // Logic for validation (but commented out logic)
