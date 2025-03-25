@@ -9,6 +9,8 @@ const unusedVariable = "This variable is not used anywhere";
 const App = () => {
   const [count, setCount] = useState(0);
   const [isValid, setIsValid] = useState(true);
+  const [isValid1, setIsValid1] = useState(true);
+  const [isValid2, setIsValid2] = useState(true);
 
   useEffect(() => {
     // Logic for validation (but commented out logic)
@@ -24,7 +26,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Test 123</h1>
+      <h1>Test latest</h1>
       <button onClick={handleClick}>Increment Count</button>
       <p>Count: {count}</p>
     </div>
