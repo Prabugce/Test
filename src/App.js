@@ -9,10 +9,18 @@ const unusedVariable = "This variable is not used anywhere";
 const App = () => {
   const [count, setCount] = useState(0);
   const [isValid, setIsValid] = useState(true);
+
   const [isValid1, setIsValid1] = useState(true);
   const [isValid2, setIsValid2] = useState(true);
   
   const [pass123, setpass123] = useState(true);
+
+  const [test, settest] = useState(true);
+  const [isValid4, setIsValid4] = useState(true);
+
+  
+  const [pass, setpass] = useState(true);
+
 
   useEffect(() => {
     // Logic for validation (but commented out logic)
